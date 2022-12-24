@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alwyn-Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+</head>
+<body>
+  <div id="main"></div>
+  <header>
+    <div class="toolbar">
+      <p id="logo-text">Welcome</p>
+        <a class="hamburger" href="#">
+          <img src="images/Union.svg">
+        </a>
+      </div>
+    <div class="navbar">
+    <ul class="nav-menu" type="none">
+      <a class="close-btn" href="#"><img src="images/close-icon.svg" alt="close-icon"></a>
+      <li><a class="nav-icons" href="#portfolio">Portfolio</a></li>
+      <li><a class="nav-icons" href="#about">About</a></li>
+      <li><a class="nav-icons" href="#contact">Contact</a></li>
+    </ul>
+    <div id="bar"></div>
+    </div>
+  </header>
+  <section class="landing-page">
+    <div id ="text-container">
+      <h1>Hey there. I’m Alwyn.<br><span id="green">I’m a software developer</span></h1>
+    </div>
+    <div id="text-container2">
+      <p id="text3"> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
+        don’t hestiate to contact me.
+      </p>
+    </div>
+    <div class="social-media">
+      <input type="image"  src="images/twitter.png" alt="twitter-icon">
+      <input type="image"  src="images/Linkedin icon.png" alt="linkedin-icon">
+      <input type="image"  src="images/medium.png" alt="medium-icon">
+      <input type="image"  src="images/github.png" alt="github-icon">
+      <input type="image"  src="images/angellist.png" alt="angellist-icon">
+    </div>
+    <div id="scroll">
+      <a href="#portfolio"><img src="images/scroll-button.png" alt="scroll-image"></a>
+    </div> 
+  </section> 
+  <section class="mid-section">
+    <div class="intro" id="portfolio">
+      <h2>My Recent Works</h2>
+      <div id="indicator"></div>            
+    </div>
+    <div class="projects"></div>
+    <div class="about-me" id="about">
+      <h2>About me</h2>
+      <p id="bio"> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
+        don’t hestiate to contact me.
+      </p>
+      <button type="button" class="button-1">Get My Resume</button>
+    </div>
+    <div class="skills">
+      <div class="skill-entries">
+        <img class="icons" src="images/languages.svg" alt="languages-icon">
+        <p class="title">Languages</p>
+        <ul type="none">
+          <li id="skill1">JavaScript</li>
+          <li id="skill2">Ruby</li>
+          <li id="skill3">Html</li>
+          <li id="skill4">CSS</li>
+        </ul>
+      </div> 
+      <div class="skill-entries">
+        <img class="icons" src="images/frameworks.svg" alt="frameworks-icon">
+        <p class="title">Frameworks</p>
+        <ul type="none">
+          <li id="skill5">Bootstrap</li>
+          <li id="skill6">Ruby on rails</li>
+          <li id="skill7">RSpec</li>
+          <li id="skill8">Capybara</li>
+          <li id="skill9">Selenium</li>
+        </ul>
+      </div>
+      <div class="skill-entries">
+        <img class="icons" src="images/skills.svg" alt="skils-icon">
+        <p class="title">Skills</p>
+        <ul type="none">
+          <li id="skill10">Codekit</li>
+          <li id="skill11">GitHub</li>
+          <li id="skill12">Codepen</li>
+          <li id="skill13">Gitlab</li>
+          <li id="skill14">Terminal</li>
+        </ul>
+      </div> 
+    </div>
+  </section>    
+  <section class="form" id="contact">
+    <div id="form-text-container">
+      <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
+    </div>
+    <div id="form-container">
+      <form action="https://formspree.io/f/mrgdnqrz" method="post" id="form-entries" class="form-entries" novalidate>
+        <input class="fill-area" type="text" id="fname" name="fname" maxlength="30" required placeholder="Full Name">
+        <input class="fill-area" type="text" id="lname" name="lname" maxlength="30" required placeholder="Last Name">
+        <input class="fill-area" type="email" id="address" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Email Address">
+        <textarea id="message" class="fill-area" rows="8" maxlength="500" required placeholder="Enter text here"></textarea>
+        <input class="button-1" id="submit" type="submit" value="Get in touch">
+        <label for="success/error message" class="submission-feedback">
+          Thank you. your Details have been submitted.
+        </label>
+      </form>   
+    </div>
+  </section>
+  <section id="footer">
+    <hr>
+    <div class="social-media" id="footer-icons">
+      <input type="image"  src="images/twitter.png" alt="twitter-icon">
+      <input type="image"  src="images/Linkedin icon.png" alt="linkedin-icon">
+      <input type="image"  src="images/medium.png" alt="medium-icon">
+      <input type="image"  src="images/github.png" alt="github-icon">
+      <input type="image"  src="images/angellist.png" alt="angellist-icon">
+    </div>
+    <p id="email">alwynsimiyu@gmail.com</p> 
+  </section> 
+  <script type="text/javascript" src="myscript.js"></script>
+</body>
+</html>
